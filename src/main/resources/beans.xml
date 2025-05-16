@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="dao" class="net.mayssam.dao.DaoImpl"/>
+    <bean id="metierImpl3" class="net.mayssam.metier.MetierImpl3" init-method="init">
+        <property name="dao" ref="dao"/>
+    </bean>
+</beans>

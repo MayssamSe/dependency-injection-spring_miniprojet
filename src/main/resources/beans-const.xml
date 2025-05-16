@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="dao" class="net.mayssam.dao.DaoImpl"/>
+
+    <!-- Bean avec injection par constructeur -->
+    <bean id="metierCtor" class="net.mayssam.metier.MetierImpl2" init-method="init">
+        <constructor-arg ref="dao"/>
+    </bean>
+
+</beans>
