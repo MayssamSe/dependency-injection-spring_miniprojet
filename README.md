@@ -102,7 +102,48 @@ System.out.println("Résultat : " + metier.calcul());
 - `PresXmlAttr.java` : injection XML via champ
 - `PresXmlConstr.java` : injection XML via constructeur
 - `PresXmlSetter.java` : injection XML via setter
+  
+##Resultats
+### Injection avec Annotations
+![Injection par champ (annotations)](images/pres1_att.png)
+![Injection par constructeur (annotations)](images/pres1_constructor.png)
+![Injection par setter (annotations)](images/pres1_setter.png)
 
+### Injection avec XML
+![Injection par champ (XML)](images/pres2_att.png)
+![Injection par constructeur (XML)](images/pres2_constructor.png)
+![Injection par setter (XML)](images/pres2_setter.png)
+
+##  Injection avec Annotations
+
+L'injection est réalisée directement dans le code Java à l'aide d'annotations personnalisées comme `@Component`, `@Inject` et `@PostConstruct`.
+
+### Avantages
+-  Configuration intégrée directement dans le code.
+-  Lisibilité accrue : les dépendances sont visibles à l’intérieur de la classe.
+-  Plus moderne, proche de la façon de faire dans Spring.
+-  Moins de fichiers à maintenir.
+
+###  Inconvénients
+-  Moins de séparation entre configuration et logique métier.
+-  Les modifications de dépendances nécessitent une recompilation.
+-  Moins flexible pour des environnements dynamiques ou modulaires.
+
+
+
+##  Injection avec XML
+
+L’injection est définie de manière déclarative dans un fichier XML externe (`beans.xml`).
+
+###  Avantages
+-  Séparation claire entre configuration et code métier.
+-  Les dépendances peuvent être changées sans toucher au code.
+-  Adaptée aux projets nécessitant plusieurs environnements de configuration.
+
+###  Inconvénients
+-  Syntaxe plus verbeuse et parfois lourde.
+-  Moins lisible : il faut consulter le XML pour connaître les dépendances.
+-  Risque accru d’erreurs de nommage (ex: fautes de frappe dans les IDs).
 
 
 ## Implémentation du framework
@@ -129,6 +170,6 @@ Il permet aussi de mieux comprendre le fonctionnement interne d’un conteneur I
 
 ## Auteur
 
-**Nom** : Mayssam Se  
+**Nom** : Mayssam Sehait  
 **Projet universitaire Master SDIA**  
 **GitHub** : [https://github.com/MayssamSe/dependency-injection-spring_miniprojet](https://github.com/MayssamSe/dependency-injection-spring_miniprojet)
