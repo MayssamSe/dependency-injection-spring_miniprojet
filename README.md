@@ -105,14 +105,14 @@ System.out.println("Résultat : " + metier.calcul());
   
 ##Resultats
 ### Injection avec Annotations
-![Injection par champ (annotations)](images/pres1_att.png)
-![Injection par constructeur (annotations)](images/pres1_constructor.png)
-![Injection par setter (annotations)](images/pres1_setter.png)
+![Injection par champ (annotations)](images/pres1_att.PNG)
+![Injection par constructeur (annotations)](images/pres1_constructeur.PNG)
+![Injection par setter (annotations)](images/pres1_setter.PNG)
 
 ### Injection avec XML
-![Injection par champ (XML)](images/pres2_att.png)
-![Injection par constructeur (XML)](images/pres2_constructor.png)
-![Injection par setter (XML)](images/pres2_setter.png)
+![Injection par champ (XML)](images/pres2_att.PNG)
+![Injection par constructeur (XML)](images/pres2_constructeur.PNG)
+![Injection par setter (XML)](images/pres2_setter.PNG)
 
 ##  Injection avec Annotations
 
